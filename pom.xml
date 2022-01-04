@@ -40,13 +40,19 @@
     <dependency> 
       <groupId>org.springframework.experimental</groupId>  
       <artifactId>spring-native</artifactId>  
-      <version>0.11.1</version>
+      <version>${spring-native.version}</version>
     </dependency>  
     <dependency> 
       <groupId>org.springdoc</groupId>  
       <artifactId>springdoc-openapi-ui</artifactId>  
       <version>1.6.3</version> 
     </dependency>
+    <!--<dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-devtools</artifactId>
+      <scope>runtime</scope>
+      <optional>true</optional>
+    </dependency>-->
     <dependency> 
       <groupId>org.springframework.boot</groupId>  
       <artifactId>spring-boot-starter-test</artifactId>  
@@ -92,7 +98,7 @@
       <plugin> 
         <groupId>org.springframework.experimental</groupId>  
         <artifactId>spring-aot-maven-plugin</artifactId>  
-        <version>0.11.1</version>
+        <version>${spring-native.version}</version>
         <executions>
           <execution>
             <id>test-generate</id>
